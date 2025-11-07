@@ -16,12 +16,19 @@
 ---
 
 > [!Note]
-> 利用した感想はぜひギークフジワラのXまでご投稿お願い致します！
+> 利用した感想はぜひ[ギークフジワラのX](https://x.com/geekfujiwara/status/1986705800119861480)までご投稿お願い致します！
 >
 > また、インストール方法は本ページの末尾をご確認ください。
 
 ## 概要
 ITシステム導入プロジェクト用のガントチャート管理アプリです。[geekfujiwara/CodeAppsDevelopmentStandard](https://github.com/geekfujiwara/CodeAppsDevelopmentStandard) に準拠して開発されています。
+
+以下のように動作します。
+
+
+https://github.com/user-attachments/assets/99878096-e832-402b-82b2-9db51adac7c4
+
+
 
 ## 特長
 
