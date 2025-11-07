@@ -15,6 +15,11 @@
 
 ---
 
+> [!Note]
+> 利用した感想はぜひギークフジワラのXまでご投稿お願い致します！
+>
+> また、インストール方法は本ページの末尾をご確認ください。
+
 ## 概要
 ITシステム導入プロジェクト用のガントチャート管理アプリです。[geekfujiwara/CodeAppsDevelopmentStandard](https://github.com/geekfujiwara/CodeAppsDevelopmentStandard) に準拠して開発されています。
 
@@ -194,6 +199,24 @@ code-app-project/
 
 ## ライセンス
 MIT License
+
+## インストール方法
+
+ソリューションにてインストールが可能です。
+
+[リリースよりソリューションを入手し](https://github.com/geekfujiwara/GanttChartManager/releases)、Power Apps 作成者ポータルにてインポートします。
+
+<img width="1059" height="630" alt="image" src="https://github.com/user-attachments/assets/ab07cd8d-87ec-419d-9cb9-47aebfe8ceac" />
+
+入手したら **アプリ** から実行します。
+
+<img width="1368" height="650" alt="image" src="https://github.com/user-attachments/assets/eb881ccf-07c2-4c22-8e30-6c5cfc7d2291" />
+
+実行すると必要な接続を作成します。
+
+<img width="1912" height="954" alt="image" src="https://github.com/user-attachments/assets/3b1dd5e1-f252-4bd8-993e-716b01b7868e" />
+
+実行できるようになりました。
 
 ## 開発標準
 本プロジェクトは [geekfujiwara/CodeAppsDevelopmentStandard](https://github.com/geekfujiwara/CodeAppsDevelopmentStandard) に準拠して開発されています。
