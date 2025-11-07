@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  
+  <!-- Gantt Chart Elements -->
+  <!-- Timeline Lines -->
+  <line x1="12" y1="20" x2="52" y2="20" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="12" y1="28" x2="52" y2="28" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="12" y1="36" x2="52" y2="36" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="12" y1="44" x2="52" y2="44" stroke="#FFFFFF" stroke-width="1.5"/>
+  
+  <!-- Timeline Markers -->
+  <circle cx="16" cy="16" r="2" fill="#FFD700"/>
+  <circle cx="24" cy="16" r="2" fill="#FFD700"/>
+  <circle cx="32" cy="16" r="2" fill="#FFD700"/>
+  <circle cx="40" cy="16" r="2" fill="#FFD700"/>
+  <circle cx="48" cy="16" r="2" fill="#FFD700"/>
+  
+  <!-- Task Bars -->
+  <rect x="14" y="18" width="12" height="4" rx="2" fill="#22C55E"/>
+  <rect x="18" y="26" width="16" height="4" rx="2" fill="#EF4444"/>
+  <rect x="16" y="34" width="20" height="4" rx="2" fill="#F59E0B"/>
+  <rect x="20" y="42" width="14" height="4" rx="2" fill="#8B5CF6"/>
+  
+  <!-- Progress Indicators -->
+  <rect x="14" y="18" width="6" height="4" rx="2" fill="#16A34A"/>
+  <rect x="18" y="26" width="8" height="4" rx="2" fill="#DC2626"/>
+  <rect x="16" y="34" width="10" height="4" rx="2" fill="#D97706"/>
+  <rect x="20" y="42" width="7" height="4" rx="2" fill="#7C3AED"/>
+  
+  <!-- Lightning Icon (Power Apps Symbol) -->
+  <path d="M30 48 L34 48 L32 52 L36 46 L32 46 L34 42 Z" fill="#FFD700"/>
+  
+  <!-- Code Brackets -->
+  <text x="8" y="58" font-family="monospace" font-size="8" fill="#FFFFFF" font-weight="bold">&lt;</text>
+  <text x="52" y="58" font-family="monospace" font-size="8" fill="#FFFFFF" font-weight="bold">&gt;</text>
+</svg>

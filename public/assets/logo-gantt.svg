@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Gradient Definitions -->
+    <radialGradient id="bgGradient" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#4FAEE9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0078D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Task Bar Gradients -->
+    <linearGradient id="successBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22C55E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16A34A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="warningBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="errorBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="primaryBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow Filter -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0, 0, 0, 0.3)" />
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#bgGradient)" stroke="#001122" stroke-width="3" filter="url(#dropShadow)"/>
+  
+  <!-- Grid Lines (Timeline) -->
+  <g stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
+    <line x1="24" y1="40" x2="104" y2="40"/>
+    <line x1="24" y1="56" x2="104" y2="56"/>
+    <line x1="24" y1="72" x2="104" y2="72"/>
+    <line x1="24" y1="88" x2="104" y2="88"/>
+  </g>
+  
+  <!-- Vertical Timeline Dividers -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+    <line x1="32" y1="32" x2="32" y2="96"/>
+    <line x1="48" y1="32" x2="48" y2="96"/>
+    <line x1="64" y1="32" x2="64" y2="96"/>
+    <line x1="80" y1="32" x2="80" y2="96"/>
+    <line x1="96" y1="32" x2="96" y2="96"/>
+  </g>
+  
+  <!-- Timeline Markers (Months/Phases) -->
+  <g fill="#FFD700" stroke="#F59E0B" stroke-width="1">
+    <circle cx="32" cy="28" r="3"/>
+    <circle cx="48" cy="28" r="3"/>
+    <circle cx="64" cy="28" r="3"/>
+    <circle cx="80" cy="28" r="3"/>
+    <circle cx="96" cy="28" r="3"/>
+  </g>
+  
+  <!-- Gantt Task Bars with Progress Indicators -->
+  <!-- Task 1: Planning (Completed) -->
+  <rect x="26" y="36" width="24" height="8" rx="4" fill="url(#successBar)" stroke="#FFFFFF" stroke-width="1"/>
+  <rect x="26" y="36" width="24" height="8" rx="4" fill="#16A34A" opacity="0.8"/>
+  
+  <!-- Task 2: Development (In Progress) -->
+  <rect x="30" y="52" width="32" height="8" rx="4" fill="url(#warningBar)" stroke="#FFFFFF" stroke-width="1"/>
+  <rect x="30" y="52" width="16" height="8" rx="4" fill="#D97706" opacity="0.8"/>
+  
+  <!-- Task 3: Testing (Delayed) -->
+  <rect x="34" y="68" width="40" height="8" rx="4" fill="url(#errorBar)" stroke="#FFFFFF" stroke-width="1"/>
+  <rect x="34" y="68" width="12" height="8" rx="4" fill="#DC2626" opacity="0.8"/>
+  
+  <!-- Task 4: Deployment (Not Started) -->
+  <rect x="38" y="84" width="28" height="8" rx="4" fill="url(#primaryBar)" stroke="#FFFFFF" stroke-width="1"/>
+  
+  <!-- Dependency Arrows -->
+  <g stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M50 44 L52 50 L50 50 Z" fill="#FFFFFF"/>
+    <path d="M62 60 L64 66 L62 66 Z" fill="#FFFFFF"/>
+    <path d="M74 76 L76 82 L74 82 Z" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Power Platform Lightning Symbol -->
+  <g transform="translate(88, 100)">
+    <path d="M-6 -8 L2 -8 L-2 0 L6 -12 L-2 -12 L2 -20 Z" fill="#FFD700" stroke="#F59E0B" stroke-width="1"/>
+  </g>
+  
+  <!-- Code App Indicators -->
+  <text x="16" y="116" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF" font-weight="bold" opacity="0.9">&lt;</text>
+  <text x="96" y="116" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF" font-weight="bold" opacity="0.9">/&gt;</text>
+  
+  <!-- Status Dots -->
+  <g>
+    <circle cx="108" cy="40" r="2" fill="#22C55E"/> <!-- Completed -->
+    <circle cx="108" cy="56" r="2" fill="#F59E0B"/> <!-- In Progress -->
+    <circle cx="108" cy="72" r="2" fill="#EF4444"/> <!-- Delayed -->
+    <circle cx="108" cy="88" r="2" fill="#6B7280"/> <!-- Not Started -->
+  </g>
+</svg>

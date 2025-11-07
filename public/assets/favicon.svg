@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="15" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  
+  <!-- Simplified Gantt Chart -->
+  <rect x="4" y="8" width="6" height="2" rx="1" fill="#22C55E"/>
+  <rect x="5" y="12" width="8" height="2" rx="1" fill="#EF4444"/>
+  <rect x="6" y="16" width="10" height="2" rx="1" fill="#F59E0B"/>
+  <rect x="7" y="20" width="7" height="2" rx="1" fill="#8B5CF6"/>
+  
+  <!-- Lightning -->
+  <path d="M14 24 L16 24 L15 26 L18 22 L16 22 L17 20 Z" fill="#FFD700"/>
+</svg>

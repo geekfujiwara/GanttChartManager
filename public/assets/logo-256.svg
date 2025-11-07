@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Background Circle with Gradient -->
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#4FAEE9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0078D4;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="barGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22C55E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16A34A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="128" cy="128" r="120" fill="url(#bgGrad)" stroke="#005A9E" stroke-width="8"/>
+  
+  <!-- Grid Lines (subtle) -->
+  <line x1="48" y1="80" x2="208" y2="80" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="48" y1="112" x2="208" y2="112" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="48" y1="144" x2="208" y2="144" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="48" y1="176" x2="208" y2="176" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  
+  <!-- Timeline Markers -->
+  <circle cx="64" cy="64" r="6" fill="#FFD700" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="96" cy="64" r="6" fill="#FFD700" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="128" cy="64" r="6" fill="#FFD700" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="160" cy="64" r="6" fill="#FFD700" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="192" cy="64" r="6" fill="#FFD700" stroke="#F59E0B" stroke-width="2"/>
+  
+  <!-- Gantt Chart Task Bars with Progress -->
+  <rect x="56" y="72" width="48" height="16" rx="8" fill="url(#barGrad1)" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="56" y="72" width="24" height="16" rx="8" fill="#16A34A"/>
+  
+  <rect x="72" y="104" width="64" height="16" rx="8" fill="url(#barGrad2)" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="72" y="104" width="32" height="16" rx="8" fill="#DC2626"/>
+  
+  <rect x="64" y="136" width="80" height="16" rx="8" fill="url(#barGrad3)" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="64" y="136" width="40" height="16" rx="8" fill="#D97706"/>
+  
+  <rect x="80" y="168" width="56" height="16" rx="8" fill="url(#barGrad4)" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="80" y="168" width="28" height="16" rx="8" fill="#7C3AED"/>
+  
+  <!-- Power Apps Lightning Symbol -->
+  <path d="M120 192 L136 192 L128 208 L144 184 L128 184 L136 168 Z" fill="#FFD700" stroke="#F59E0B" stroke-width="2"/>
+  
+  <!-- Code Brackets -->
+  <text x="32" y="232" font-family="Consolas, monospace" font-size="32" fill="#FFFFFF" font-weight="bold" stroke="#0078D4" stroke-width="1">&lt;</text>
+  <text x="208" y="232" font-family="Consolas, monospace" font-size="32" fill="#FFFFFF" font-weight="bold" stroke="#0078D4" stroke-width="1">&gt;</text>
+  
+  <!-- Gear Icon (smaller, for app functionality) -->
+  <g transform="translate(200, 40) scale(0.8)">
+    <circle cx="12" cy="12" r="3" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M12 1L12 6M12 18L12 23M4.22 4.22L7.76 7.76M16.24 16.24L19.78 19.78M1 12L6 12M18 12L23 12M4.22 19.78L7.76 16.24M16.24 7.76L19.78 4.22" stroke="#FFFFFF" stroke-width="1.5"/>
+  </g>
+</svg>

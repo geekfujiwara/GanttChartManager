@@ -1,0 +1,69 @@
+{
+  "name": "systemuser",
+  "title": "User",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "systemusers",
+      "x-ms-dataverse-primary-id": "systemuserid",
+      "x-ms-dataverse-primary-name": "fullname",
+      "properties": {
+        "systemuserid": {
+          "type": "string",
+          "title": "User",
+          "x-ms-dataverse-attribute": "systemuserid",
+          "x-ms-dataverse-type": "UniqueidentifierType"
+        },
+        "fullname": {
+          "type": "string",
+          "title": "Full Name",
+          "x-ms-dataverse-attribute": "fullname",
+          "x-ms-dataverse-type": "StringType",
+          "maxLength": 200
+        },
+        "internalemailaddress": {
+          "type": "string",
+          "title": "Primary Email",
+          "x-ms-dataverse-attribute": "internalemailaddress",
+          "x-ms-dataverse-type": "StringType",
+          "maxLength": 100
+        },
+        "azureactivedirectoryobjectid": {
+          "type": "string",
+          "title": "Azure AD Object ID",
+          "x-ms-dataverse-attribute": "azureactivedirectoryobjectid",
+          "x-ms-dataverse-type": "UniqueidentifierType"
+        },
+        "isdisabled": {
+          "type": "boolean",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "isdisabled",
+          "x-ms-dataverse-type": "BooleanType"
+        },
+        "firstname": {
+          "type": "string",
+          "title": "First Name",
+          "x-ms-dataverse-attribute": "firstname",
+          "x-ms-dataverse-type": "StringType",
+          "maxLength": 64
+        },
+        "lastname": {
+          "type": "string",
+          "title": "Last Name",
+          "x-ms-dataverse-attribute": "lastname",
+          "x-ms-dataverse-type": "StringType",
+          "maxLength": 64
+        },
+        "domainname": {
+          "type": "string",
+          "title": "User Name",
+          "x-ms-dataverse-attribute": "domainname",
+          "x-ms-dataverse-type": "StringType",
+          "maxLength": 1024
+        }
+      }
+    }
+  }
+}

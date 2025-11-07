@@ -1,0 +1,46 @@
+{
+  "appId": "16b17303-4603-47ce-b4fc-12559e2d557c",
+  "appDisplayName": "ガントチャートプロジェクト管理",
+  "description": "ITシステム導入プロジェクト用ガントチャート管理アプリ",
+  "environmentId": "28130368-fe41-e701-a32b-2b413ac21d0b",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "./public/assets/logo.svg",
+  "localAppUrl": "http://localhost:3000",
+  "connectionReferences": {
+    "c60b4a2c-c784-4635-bd1a-863d9a41cbfe": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "state": "Configured",
+      "instanceUrl": "https://usgeek.crm.dynamics.com/",
+      "webApiVersion": "v9.0",
+      "dataSources": {
+        "______": {
+          "entitySetName": "geek_projecrts",
+          "logicalName": "geek_projecrt",
+          "isHidden": false
+        },
+        "_________": {
+          "entitySetName": "geek_project_tasks",
+          "logicalName": "geek_project_task",
+          "isHidden": false
+        },
+        "SystemUsers": {
+          "entitySetName": "systemusers",
+          "logicalName": "systemuser",
+          "isHidden": false
+        }
+      },
+      "version": "v9.0",
+      "environmentVariableName": ""
+    }
+  }
+}

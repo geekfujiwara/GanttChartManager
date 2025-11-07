@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Power Platform 公式カラーパレット */
+    --power-blue: 210 40% 44%;
+    --power-blue-light: 210 40% 60%;
+    --power-blue-lighter: 210 40% 85%;
+    --power-red: 0 65% 73%;
+    --power-gray: 0 0% 75%;
+    
+    /* shadcn/ui 統合テーマ (Power Platform準拠) */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 210 40% 44%; /* Power Blue */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 40% 44%;
+    --radius: 0.5rem;
+    
+    /* Gantt Chart 専用カラー */
+    --chart-1: 210 40% 50%; /* Project Blue */
+    --chart-2: 142 76% 36%; /* Success Green */
+    --chart-3: 38 92% 50%; /* Warning Orange */
+    --chart-4: 0 84% 60%; /* Critical Red */
+    --chart-5: 280 60% 50%; /* Info Purple */
+    
+    /* Success, Warning, Error カラー */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --error: 0 84% 60%;
+    --error-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 60%; /* Lighter Power Blue */
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+    
+    /* Gantt Chart ダークモード専用 */
+    --chart-1: 210 40% 65%;
+    --chart-2: 142 70% 45%;
+    --chart-3: 38 90% 60%;
+    --chart-4: 0 80% 70%;
+    --chart-5: 280 50% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Gantt Chart specific styles */
+@layer components {
+  .gantt-timeline {
+    @apply bg-muted/20 border-r border-border;
+  }
+  
+  .gantt-task {
+    @apply bg-primary rounded-sm transition-all duration-200 hover:bg-primary/90;
+  }
+  
+  .gantt-task-completed {
+    @apply bg-green-500 hover:bg-green-600;
+  }
+  
+  .gantt-task-overdue {
+    @apply bg-red-500 hover:bg-red-600;
+  }
+  
+  .gantt-grid-line {
+    @apply border-r border-muted/30;
+  }
+  
+  .gantt-row:hover {
+    @apply bg-muted/10;
+  }
+}
