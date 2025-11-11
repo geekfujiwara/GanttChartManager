@@ -81,6 +81,16 @@ MIT License
 
 ## インストール方法
 
+### 環境で Code Apps を有効にする
+
+Power Platform 管理センター > 環境 > 機能 > 設定 に、Code Apps を有効にする設定項目が現れています。こちらを有効にします。
+
+開発環境を整える場合についての詳細も確認したい場合こちらで紹介しています。
+
+https://www.geekfujiwara.com/tech/powerplatform/7352/
+
+### ソリューションをインストールする
+
 ソリューションにてインストールが可能です。
 
 [リリースよりソリューションを入手し](https://github.com/geekfujiwara/GanttChartManager/releases)、Power Apps 作成者ポータルにてインポートします。
